@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #1f2933;
+  padding: 12px;
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0 0 8px;
+  color: #4a5a6a;
+  font-size: 0.9rem;
+}
+
+.readout {
+  margin: 0 0 8px;
+  color: #4a5a6a;
+  font-size: 0.9rem;
+}
+
+.readout strong {
+  color: #1f2933;
+  font-weight: 600;
+}
+
+#sketch-holder {
+  overflow: hidden;
+  min-height: 70vh;
+  background: #eef2f7;
+}
+
+#sketch-holder canvas {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  #sketch-holder {
+    min-height: 62vh;
+  }
+}
